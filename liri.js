@@ -53,10 +53,12 @@ var spotifyFunction = function(){
 //function for bandsintown api functionality
 var concertFunction = function(){
   var queryUrl = "https://rest.bandsintown.com/artists/" + item + "/events?app_id=codingbootcamp";
+  // console.log(queryUrl);
 
   request(queryUrl, function (error, response, body){
     if (!error && response.statusCode === 200) {
-      var bandArray = JSON.parse(body)
+      var bandArray = JSON.parse(body);
+      // console.log(bandArray);
       bandArray.forEach(function(event){
           console.log(event.venue.name)
           console.log(event.venue.city)
@@ -82,7 +84,7 @@ if(commandInput === "movie-this"){
     movieFunction();
 }
 
-else if(commandInput === "conert-this"){
+else if(commandInput === "concert-this"){
   concertFunction();
 }
 
