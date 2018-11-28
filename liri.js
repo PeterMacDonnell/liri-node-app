@@ -99,6 +99,4 @@ else if(commandInput === "do-what-it-says"){
 
 
 
-//Spotify API info
-// Client ID 82feda22363241bb8acda145c2346bc5
-// Client Secret a300163c2ad54424a8577af447886949
+
